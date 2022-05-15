@@ -1,0 +1,15 @@
+$breakpoints: (
+  xlarge: 'max-width: 1440px',
+  large: 'max-width: 1024px',
+  medium: 'max-width: 768px',
+  small: 'max-width: 411px',
+  smallLandscape: 'max-width: 640px) and (orientation: landscape',
+);
+
+$dark: #242424;
+$white: #ffffff;
+$background: #f2f2f2;
+$orange: #ed712a;
+$border: #707070;
+
+$maven: 'Maven Pro', sans-serif;
