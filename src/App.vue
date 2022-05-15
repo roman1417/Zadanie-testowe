@@ -34,12 +34,14 @@
     :image-on-left="profits.item3.imageOnLeft"
   >
   </profit-item>
+  <questions-block></questions-block>
 </template>
 
 <script>
 import MainBanner from './components/banner/MainBanner.vue';
 import InfoBlock from './components/info/InfoBlock.vue';
 import ProfitItem from './components/profits/ProfitItem.vue';
+import QuestionsBlock from './components/questions/QuestionsBlock.vue';
 
 export default {
   name: 'App',
@@ -47,6 +49,7 @@ export default {
     MainBanner,
     ProfitItem,
     InfoBlock,
+    QuestionsBlock,
   },
   data() {
     return {
