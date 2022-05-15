@@ -5,14 +5,14 @@
         class="profit__image-wrapper"
         :class="{ 'profit__image-wrapper--on-right': !imageOnLeft }"
       >
-        <img :src="profitImage" :alt="alt" class="profit__image" />
+        <img v-lazy="profitImage" :alt="alt" class="profit__image" />
       </div>
       <div
         class="profit__text-wrapper"
         :class="{ 'profit__text-wrapper--without-icon': !icon }"
       >
         <div class="profit__icon-wrapper" v-if="icon">
-          <img :src="profitIcon" :alt="iconAlt" class="profit__icon" />
+          <img v-lazy="profitIcon" :alt="iconAlt" class="profit__icon" />
         </div>
         <h3 class="profit__title">{{ title }}</h3>
         <p class="profit__text">{{ text }}</p>
