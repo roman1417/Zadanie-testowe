@@ -4,7 +4,7 @@
       <h4 class="questions__title">
         Najczęściej zadawane <span class="questions__underline">pytania</span>
       </h4>
-      <ul class="questions-list">
+      <ul class="questions__list">
         <question-item
           v-for="question in questions"
           :key="question.id"
@@ -74,3 +74,53 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.questions {
+  margin-bottom: 120px;
+
+  @include mq(xlarge) {
+    margin-bottom: 100px;
+  }
+
+  @include mq(large) {
+    margin-bottom: 85px;
+  }
+
+  @include mq(medium) {
+    margin-bottom: 75px;
+  }
+
+  @include mq(small) {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 1.35em;
+    text-align: center;
+
+    @include mq(medium) {
+      margin-bottom: 1.2em;
+    }
+  }
+
+  &__underline {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0.35em;
+      bottom: -0.1em;
+      width: 102%;
+      height: 0.1em;
+      background: $orange;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+}
+</style>
