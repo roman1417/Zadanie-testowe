@@ -5,11 +5,11 @@
         class="profit__image-wrapper"
         :class="{ 'profit__image-wrapper--on-right': !imageOnLeft }"
       >
-        <img :src="image" :alt="alt" class="profit__image" />
+        <img :src="profitImage" :alt="alt" class="profit__image" />
       </div>
       <div class="profit__text-wrapper">
         <div class="profit__icon-wrapper" v-if="icon">
-          <img :src="icon" :alt="iconAlt" class="profit__icon" />
+          <img :src="profitIcon" :alt="iconAlt" class="profit__icon" />
         </div>
         <h3 class="profit__title">{{ title }}</h3>
         <p class="profit__text">{{ text }}</p>
@@ -49,6 +49,14 @@ export default {
     iconAlt: {
       type: String,
       required: false,
+    },
+  },
+  computed: {
+    profitImage() {
+      return require('@/assets/images/' + this.image);
+    },
+    profitIcon() {
+      return require('@/assets/images/' + this.icon);
     },
   },
 };
