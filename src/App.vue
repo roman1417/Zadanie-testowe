@@ -15,6 +15,7 @@
     :icon-alt="profits.item1.iconAlt"
   >
   </profit-item>
+  <info-block></info-block>
   <profit-item
     :title="profits.item2.title"
     :text="profits.item2.text"
@@ -37,6 +38,7 @@
 
 <script>
 import MainBanner from './components/banner/MainBanner.vue';
+import InfoBlock from './components/info/InfoBlock.vue';
 import ProfitItem from './components/profits/ProfitItem.vue';
 
 export default {
@@ -44,6 +46,7 @@ export default {
   components: {
     MainBanner,
     ProfitItem,
+    InfoBlock,
   },
   data() {
     return {
