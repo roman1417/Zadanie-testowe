@@ -68,7 +68,7 @@ export default {
           iconAlt: 'koszyk na zakupy w dłoniach',
         },
         item2: {
-          title: 'To Ty decydujesz, \n a my Cię wspieramy',
+          title: 'To Ty decydujesz,\na my Cię wspieramy',
           text: 'Wiemy, że cenisz niezależność. Dlatego my skupiamy się na zapewnieniu Ci najbardziej korzystnych warunków, abyś Ty mógł zająć się prowadzeniem biznesu.',
           image: 'profit2.jpg',
           alt: 'mężczyzna z tabletem przy półce sklepowej',
