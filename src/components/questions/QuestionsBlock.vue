@@ -4,13 +4,40 @@
       <h4 class="questions__title">
         Najczęściej zadawane <span class="questions__underline">pytania</span>
       </h4>
+      <ul class="questions-list">
+        <question-item
+          v-for="question in questions"
+          :key="question.id"
+          :id="question.id"
+          :active="question.active"
+          :question="question.question"
+          :answer="question.answer"
+          @question-click="questionClick"
+        ></question-item>
+      </ul>
     </section>
   </base-container>
 </template>
 
 <script>
+import QuestionItem from './QuestionsItem.vue';
+
 export default {
   name: 'QuestionsBlock',
+  components: {
+    QuestionItem,
+  },
+  methods: {
+    questionClick(id) {
+      this.questions.forEach(item => {
+        if (id === item.id) {
+          item.active = !item.active;
+        } else {
+          item.active = false;
+        }
+      });
+    },
+  },
   data() {
     return {
       questions: [
