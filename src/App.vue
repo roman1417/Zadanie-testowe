@@ -16,9 +16,9 @@ export default {
     return {
       bannerData: {
         images: {
-          large: '../../assets/images/banner_1920x467.jpg',
-          medium: '../../assets/images/banner_1024x249.jpg',
-          small: '../../assets/images/banner_411x100.jpg',
+          large: 'banner_1920x467.jpg',
+          medium: 'banner_1024x249.jpg',
+          small: 'banner_411x100.jpg',
         },
         title: 'Franczyza',
         path: ['Strona główna'],

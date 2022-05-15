@@ -14,3 +14,15 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+a {
+  color: $white;
+  text-decoration: none;
+  @include transition;
+
+  &:hover {
+    color: lighten($orange, 35%);
+  }
+}
+</style>
